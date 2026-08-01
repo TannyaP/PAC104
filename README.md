@@ -1,6 +1,5 @@
-Here’s a GitHub-ready README in the same style as your paneer project, adapted for the **Overtraining Syndrome prediction** project.
 
-# 🏃 Predicting Overtraining Syndrome in Athletes Using Machine Learning and Wearable Sensor Data
+# Predicting Overtraining Syndrome in Athletes Using Machine Learning and Wearable Sensor Data
 
 This repository presents our project on predicting **Overtraining Syndrome (OTS) risk in athletes** using Machine Learning and longitudinal wearable sensor data.
 
@@ -8,7 +7,7 @@ The project analyzes physiological, training, recovery, and performance-related 
 
 ---
 
-## 📌 Project Summary
+## Project Summary
 
 Wearable devices are widely used to monitor athlete health, training performance, and recovery. However, excessive training without sufficient recovery can lead to **Overtraining Syndrome (OTS)**, which may cause:
 
@@ -25,7 +24,7 @@ Our project aims to build a **data-driven early-warning system** that analyzes t
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Overtraining develops gradually and is difficult to detect during its early stages.
 
@@ -37,7 +36,7 @@ Athletes may experience performance decline only after excessive training stress
 
 ---
 
-## 🧠 Proposed Framework
+## Proposed Framework
 
 The proposed framework integrates:
 
@@ -47,7 +46,7 @@ The proposed framework integrates:
 
 The framework combines personalized physiological baselines, feature interaction analysis, temporal fatigue trends, and sequence-based learning to estimate future overtraining risk.
 
-### 🔄 Overall Pipeline
+### Overall Pipeline
 
 **Raw Wearable Data**
 → Data Cleaning
@@ -64,7 +63,7 @@ The framework combines personalized physiological baselines, feature interaction
 
 ---
 
-## 📊 Data Overview
+## Data Overview
 
 ### Wearable and Training Features
 
@@ -100,7 +99,7 @@ The dataset is structured as **longitudinal time-series data**, enabling the mod
 
 ---
 
-## 🎯 Prediction Targets
+## Prediction Targets
 
 The framework can support multiple prediction formats:
 
@@ -127,9 +126,9 @@ to
 
 ---
 
-## 🧪 Methodology
+## Methodology
 
-### 1️⃣ Data Collection
+### Data Collection
 
 Multimodal wearable sensor data is collected continuously for each athlete.
 
@@ -145,7 +144,7 @@ Longitudinal monitoring over several weeks or months is preferred to capture gra
 
 ---
 
-### 2️⃣ Data Preprocessing
+### Data Preprocessing
 
 The collected data undergoes the following preprocessing steps:
 
@@ -162,7 +161,7 @@ Athlete-specific normalization is preferred because physiological values such as
 
 ---
 
-### 3️⃣ Personalized Baseline Computation
+### Personalized Baseline Computation
 
 A healthy baseline is calculated separately for each athlete.
 
@@ -180,7 +179,7 @@ The personalized baseline allows the system to identify deviations relative to a
 
 ---
 
-### 4️⃣ PFIG — Personalized Fatigue Interaction Graph
+### PFIG — Personalized Fatigue Interaction Graph
 
 The **Personalized Fatigue Interaction Graph (PFIG)** models relationships between physiological and training-related features.
 
@@ -211,7 +210,7 @@ The framework computes a **Feature Interaction Importance Score (FIIS)** to iden
 
 ---
 
-### 5️⃣ TSDM — Temporal Stress Drift Modeling
+### TSDM — Temporal Stress Drift Modeling
 
 The **Temporal Stress Drift Modeling (TSDM)** module captures gradual deviations from an athlete’s personalized baseline.
 
@@ -234,7 +233,7 @@ A set of engineered fatigue-state features representing how an athlete’s condi
 
 ---
 
-### 6️⃣ Temporal Dataset Structuring
+### Temporal Dataset Structuring
 
 The time-series data is converted into a supervised Machine Learning format.
 
@@ -259,7 +258,7 @@ This allows the system to provide an early warning before significant performanc
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 The following models are used for performance comparison.
 
@@ -279,7 +278,7 @@ Provides efficient gradient-boosted classification and can identify complex feat
 
 ---
 
-### 🧠 SA-LSTM — Stress-Aware LSTM
+### SA-LSTM — Stress-Aware LSTM
 
 The **Stress-Aware Long Short-Term Memory (SA-LSTM)** model is designed to learn temporal fatigue patterns from sequential wearable data.
 
@@ -301,7 +300,7 @@ The LSTM model is expected to perform better than static models when overtrainin
 
 ---
 
-## 📈 Evaluation Metrics
+## Evaluation Metrics
 
 Model performance will be evaluated using:
 
@@ -320,7 +319,7 @@ Special emphasis is placed on:
 
 ---
 
-## 🔍 Expected Results and Discussion
+## Expected Results and Discussion
 
 The proposed framework is expected to identify early overtraining patterns approximately **7–14 days before major performance deterioration**.
 
@@ -335,13 +334,13 @@ Potential indicators include:
 
 Temporal models such as SA-LSTM are expected to outperform static models because they analyze the progression of fatigue rather than evaluating isolated measurements.
 
-### 💡 Key Insight
+### Key Insight
 
 > Predicting fatigue trends and personalized deviations is more effective than monitoring individual wearable metrics using fixed thresholds.
 
 ---
 
-## 🚨 Risk Scoring System
+## Risk Scoring System
 
 The predicted probability can be converted into an interpretable risk score.
 
@@ -355,7 +354,7 @@ The thresholds can later be personalized based on athlete history and model cali
 
 ---
 
-## 🛡️ Early Intervention Module
+## Early Intervention Module
 
 When predicted risk exceeds a defined threshold, the system may recommend:
 
@@ -370,7 +369,7 @@ The system is intended to support training decisions and should not be treated a
 
 ---
 
-## 📂 Proposed Repository Structure
+## Proposed Repository Structure
 
 ```text
 athlete-overtraining-prediction/
@@ -411,7 +410,7 @@ athlete-overtraining-prediction/
 
 ---
 
-## 🛠️ Technologies and Tools
+## Technologies and Tools
 
 * Python
 * Pandas
@@ -425,7 +424,7 @@ athlete-overtraining-prediction/
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 * Develop an early-warning system for athlete overtraining risk
 * Analyze physiological, training, sleep, and recovery patterns
@@ -439,7 +438,7 @@ athlete-overtraining-prediction/
 
 ---
 
-## 🧭 Future Enhancements
+## Future Enhancements
 
 * Personalized fatigue thresholds for every athlete
 * Integration of psychological stress indicators
@@ -454,7 +453,7 @@ athlete-overtraining-prediction/
 
 ---
 
-## 📄 Research Paper
+## Research Paper
 
 The project research paper will include:
 
@@ -474,7 +473,7 @@ The project research paper will include:
 
 ---
 
-## 👥 Team
+## Team
 
 * Anjum Sana
 * Arista Vania
@@ -482,7 +481,7 @@ The project research paper will include:
 
 ---
 
-## 📌 Project Status
+## Project Status
 
 🟡 **Methodology and Framework Design Completed**
 
